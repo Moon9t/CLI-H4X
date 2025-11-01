@@ -2,6 +2,14 @@
 
 **Secure TLS relay server with Signal double-ratchet E2EE, riddle-based registration, IP ban system, and admin monitoring.**
 
+## 🚀 Quick Download
+
+**[📦 Download Latest Release](https://github.com/Moon9t/CLI-H4X/releases/latest)** - Available for Linux, Windows, and macOS
+
+**Public Server**: `cli-h4x.eclipse-softworks.com:443`
+
+👉 **[Quick Start Guide for Users](QUICKSTART.md)**
+
 ## 🎯 Features
 
 ### Security
