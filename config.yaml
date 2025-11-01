@@ -1,0 +1,7 @@
+tunnel: aabae524-8355-4e3f-b875-3fcd829fe4ec
+credentials-file: /home/thyrook/.cloudflared/aabae524-8355-4e3f-b875-3fcd829fe4ec.json
+
+ingress:
+  - hostname: cli-h4x.eclipse-softworks.com
+    service: tcp://localhost:5555
+  - service: http_status:404

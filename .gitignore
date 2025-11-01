@@ -1,0 +1,62 @@
+# .gitignore
+
+# Binaries
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go build artifacts
+*.test
+*.out
+coverage.out
+
+# Databases
+*.db
+*.db-journal
+*.db-wal
+
+# Keys and certificates (NEVER commit these!)
+*.key
+*.crt
+*.pem
+*.pfx
+*.p12
+certs/
+keys/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.secret
+
+# Local development
+data/
+backups/
+logs/
+*.log
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Test artifacts
+/tmp/
+*.tmp
+
+# Client local storage
+.cli_h4x/
+sessions.db
+
+# Docker volumes
+docker-compose.override.yml

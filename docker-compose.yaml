@@ -1,0 +1,43 @@
+version: "3.8"
+services:
+  server:
+    build: .
+    container_name: cli_h4x_server
+    restart: unless-stopped
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./data:/data
+      - ./certs:/certs:ro
+    environment:
+      - ADMIN_WEBHOOK=http://webhook:8080/webhook
+      - ADMIN_IPS=127.0.0.1,172.18.0.1  # Docker network IPs for admin access
+    command: ["-addr", "0.0.0.0:5555", "-db", "/data/cli_h4x.db", "-cert", "/certs/server.crt", "-key", "/certs/server.key", "-admin_webhook", "http://webhook:8080/webhook", "-ban_min", "60"]
+    networks:
+      - cli_h4x_net
+    depends_on:
+      - webhook
+
+  webhook:
+    build:
+      context: .
+      dockerfile: Dockerfile.webhook
+    container_name: cli_h4x_webhook
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-change-this-secret}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+      - EMAIL_FROM=${EMAIL_FROM}
+      - EMAIL_TO=${EMAIL_TO}
+      - DISCORD_WEBHOOK=${DISCORD_WEBHOOK}
+    networks:
+      - cli_h4x_net
+
+networks:
+  cli_h4x_net:
+    driver: bridge
