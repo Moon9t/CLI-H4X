@@ -2,6 +2,8 @@
 
 # Binaries
 bin/
+build/
+releases/
 *.exe
 *.dll
 *.so
@@ -31,6 +33,13 @@ keys/
 .env.local
 .env.*.local
 *.secret
+
+# Downloaded packages
+*.deb
+*.rpm
+
+# Config files
+config.yaml
 
 # Local development
 data/

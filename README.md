@@ -10,6 +10,25 @@
 
 👉 **[Quick Start Guide for Users](QUICKSTART.md)**
 
+---
+
+## 💻 Platform-Specific Instructions
+
+### 🪟 Windows
+
+#### Client Usage
+```cmd
+REM Download cli-h4x-client-windows-amd64.exe from releases
+cli-h4x-client-windows-amd64.exe -server cli-h4x.eclipse-softworks.com:443
+
+REM Commands work the same as Linux/macOS
+> keygen
+> register
+> login
+> upload_prekeys
+> send username message
+`````
+
 ## 🎯 Features
 
 ### Security

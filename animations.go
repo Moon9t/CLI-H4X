@@ -194,11 +194,6 @@ func animateMoonPhase() {
 	fmt.Println()
 }
 
-// Logo
-func showEclipseLogo() {
-	// Removed - keeping it minimal
-}
-
 // Progress bar animation
 func showProgressBar(label string, duration time.Duration) {
 	width := 40
@@ -233,7 +228,3 @@ func showHeartbeat() {
 	fmt.Print("\r                    \r")
 }
 
-// ASCII art signature
-func showSignature() {
-	// Signature removed
-}

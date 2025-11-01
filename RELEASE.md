@@ -16,11 +16,13 @@ CLI-H4X is a secure, end-to-end encrypted messaging system using the Signal Prot
    - **macOS (Apple Silicon)**: `cli-h4x-client-macos-arm64`
 
 2. **Make executable** (Linux/macOS):
+
    ```bash
    chmod +x cli-h4x-client-*
    ```
 
 3. **Connect to the server**:
+
    ```bash
    # Linux/macOS
    ./cli-h4x-client-linux-amd64 -server cli-h4x.eclipse-softworks.com:443
@@ -30,6 +32,7 @@ CLI-H4X is a secure, end-to-end encrypted messaging system using the Signal Prot
    ```
 
 4. **First-time setup**:
+
    ```
    guest@h4x> keygen          # Generate encryption keys
    guest@h4x> register        # Solve riddle to create account
@@ -38,6 +41,7 @@ CLI-H4X is a secure, end-to-end encrypted messaging system using the Signal Prot
    ```
 
 5. **Send encrypted messages**:
+
    ```
    username@h4x> send friend_username Hello, this is encrypted!
    ```
@@ -85,6 +89,7 @@ Download `cli-h4x-server-linux-amd64` and run:
 ```
 
 **Server Options**:
+
 - `-addr`: Listen address (default: 0.0.0.0:5555)
 - `-db`: SQLite database file (default: cli_h4x.db)
 - `-cert`: TLS certificate (default: certs/server.crt)
@@ -96,6 +101,7 @@ Download `cli-h4x-server-linux-amd64` and run:
 ## 🔐 Riddles
 
 New users must solve one of three riddles during registration:
+
 1. **Echo Riddle**: "I speak without a mouth and hear without ears..."
 2. **Candle Riddle**: "The more you take, the more you leave behind..."
 3. **Keyboard Riddle**: "What has keys but no locks..."
