@@ -23,7 +23,7 @@ chmod +x cli-h4x-client-*
 
 **Windows (PowerShell or CMD):**
 
-```
+```cmd
 .\cli-h4x-client-windows-amd64.exe -server cli-h4x.eclipse-softworks.com:443
 ```
 
@@ -37,7 +37,7 @@ chmod +x cli-h4x-client-*
 
 Once connected, type these commands:
 
-```
+```text
 guest@h4x> keygen
 # Enter a strong passphrase (you'll need this every time you login!)
 
@@ -51,9 +51,9 @@ guest@h4x> upload_prekeys
 # Upload encryption keys
 ```
 
-### Step 5: Start Chatting
+### Step 5: Start Chatting!
 
-```
+```text
 username@h4x> send friendname Hello! This message is encrypted!
 ```
 
