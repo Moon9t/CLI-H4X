@@ -4,9 +4,10 @@
 
 ### Step 1: Download the Client
 
-Go to: **https://github.com/Moon9t/CLI-H4X/releases/latest**
+Go to: **<https://github.com/Moon9t/CLI-H4X/releases/latest>**
 
 Download the file for your system:
+
 - **Windows**: `cli-h4x-client-windows-amd64.exe`
 - **Mac (Intel)**: `cli-h4x-client-macos-amd64`
 - **Mac (Apple Silicon)**: `cli-h4x-client-macos-arm64`
@@ -21,11 +22,13 @@ chmod +x cli-h4x-client-*
 ### Step 3: Connect to the Server
 
 **Windows (PowerShell or CMD):**
+
 ```
 .\cli-h4x-client-windows-amd64.exe -server cli-h4x.eclipse-softworks.com:443
 ```
 
 **Mac/Linux:**
+
 ```bash
 ./cli-h4x-client-linux-amd64 -server cli-h4x.eclipse-softworks.com:443
 ```
@@ -48,7 +51,7 @@ guest@h4x> upload_prekeys
 # Upload encryption keys
 ```
 
-### Step 5: Start Chatting!
+### Step 5: Start Chatting
 
 ```
 username@h4x> send friendname Hello! This message is encrypted!
@@ -73,4 +76,4 @@ username@h4x> send friendname Hello! This message is encrypted!
 ---
 
 **Server**: cli-h4x.eclipse-softworks.com:443
-**Project**: https://github.com/Moon9t/CLI-H4X
+**Project**: <https://github.com/Moon9t/CLI-H4X>

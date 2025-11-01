@@ -1,4 +1,4 @@
-# CLI-H4X v2.0 🔐
+# CLI-H4X v1.0.0 🔐
 
 **Secure TLS relay server with Signal double-ratchet E2EE, riddle-based registration, IP ban system, and admin monitoring.**
 
